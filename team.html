@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clann Staffing | Team</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Clann Staffing">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="industries.html">Industries</a>
+    <a href="careers.html">Careers</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin.html">Admin</a>
+  </div>
+
+  <section class="section" style="padding-top: calc(var(--nav-height) + 40px);">
+    <div class="container">
+      <h2 class="section-title">Our Team</h2>
+      <p class="section-subtitle">The people behind every successful placement.</p>
+
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+        <div class="card" style="text-align: left; padding: 40px 32px;">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--blue), var(--orange)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; font-weight: 700; margin-bottom: 20px;">Y</div>
+          <h3>Yash</h3>
+          <p style="color: var(--orange); font-weight: 600; margin-bottom: 12px;">Chief Executive Officer</p>
+          <p>Visionary leader driving Clann Staffing's mission to reshape recruitment in India. Yash brings strategic direction and an unwavering focus on client success.</p>
+        </div>
+        <div class="card" style="text-align: left; padding: 40px 32px;">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--blue), var(--orange)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; font-weight: 700; margin-bottom: 20px;">N</div>
+          <h3>Nishi</h3>
+          <p style="color: var(--orange); font-weight: 600; margin-bottom: 12px;">Chief Operating Officer</p>
+          <p>Operations powerhouse ensuring every hiring process runs smoothly. Nishi oversees delivery, compliance, and the systems that keep Clann Staffing ahead.</p>
+        </div>
+        <div class="card" style="text-align: left; padding: 40px 32px;">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--blue), var(--orange)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; font-weight: 700; margin-bottom: 20px;">D</div>
+          <h3>Divyanshu</h3>
+          <p style="color: var(--orange); font-weight: 600; margin-bottom: 12px;">All-Rounder</p>
+          <p>From tech to talent acquisition, Divyanshu wears every hat with ease. He bridges departments and makes sure nothing falls through the cracks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><img src="assets/logo.png" alt="Clann Staffing" style="height: 36px;"></div>
+        <p>Connecting talent with opportunity. Clann Staffing is your trusted partner for workforce solutions across India.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">IT Staffing</a></li>
+          <li><a href="services.html">Contract Hiring</a></li>
+          <li><a href="services.html">Executive Search</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>career@clannstaffing.com</p>
+        <p>+91 9839440774</p>
+        <p>Noida, Uttar Pradesh</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">&copy; 2026 Clann Staffing. All rights reserved.</div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

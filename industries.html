@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clann Staffing | Industries</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Clann Staffing">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="industries.html">Industries</a>
+    <a href="careers.html">Careers</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin.html">Admin</a>
+  </div>
+
+  <section class="section" style="padding-top: calc(var(--nav-height) + 40px);">
+    <div class="container">
+      <h2 class="section-title">Industries We Serve</h2>
+      <p class="section-subtitle">Domain expertise that ensures faster, smarter placements.</p>
+
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px;">
+        <div class="card">
+          <div class="card-icon" style="background: var(--blue);">&#128295;</div>
+          <h3>Information Technology</h3>
+          <p>From startups building MVPs to enterprises scaling platforms, we source developers, QA engineers, product managers, DevOps specialists, and data scientists who match your technical stack and pace.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" style="background: var(--orange);">&#128176;</div>
+          <h3>Finance & Banking</h3>
+          <p>We understand compliance, risk, and regulation. Our finance practice delivers accountants, investment analysts, compliance officers, and fintech engineers who speak the language of your business.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" style="background: var(--blue);">&#127973;</div>
+          <h3>Healthcare</h3>
+          <p>Hospitals, clinics, and health-tech companies rely on us for administrative staff, operations managers, billing specialists, and patient care coordinators who bring both skill and empathy.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" style="background: var(--orange);">&#128722;</div>
+          <h3>Retail & E-Commerce</h3>
+          <p>Store operations, supply chain, digital marketing, customer experience — we staff every link in the retail value chain with people who understand fast-moving consumer markets.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" style="background: var(--dark);">&#128640;</div>
+          <h3>Startups</h3>
+          <p>Startups need generalists who can wear multiple hats and specialists who set the foundation for scale. We find both — from founding engineers to first sales hires.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><img src="assets/logo.png" alt="Clann Staffing" style="height: 36px;"></div>
+        <p>Connecting talent with opportunity. Clann Staffing is your trusted partner for workforce solutions across India.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">IT Staffing</a></li>
+          <li><a href="services.html">Contract Hiring</a></li>
+          <li><a href="services.html">Executive Search</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>career@clannstaffing.com</p>
+        <p>+91 9839440774</p>
+        <p>Noida, Uttar Pradesh</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">&copy; 2026 Clann Staffing. All rights reserved.</div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

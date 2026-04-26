@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clann Staffing | Careers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Clann Staffing">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="industries.html">Industries</a>
+    <a href="careers.html">Careers</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin.html">Admin</a>
+  </div>
+
+  <section class="section" style="padding-top: calc(var(--nav-height) + 40px);">
+    <div class="container">
+      <h2 class="section-title">Apply for Jobs</h2>
+      <p class="section-subtitle">Submit your details and our team will match you with the right opportunity.</p>
+
+      <div style="max-width: 600px;">
+        <form id="applyForm" style="background: var(--gray); padding: 40px; border-radius: var(--radius);">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="form-group">
+            <label for="position">Position Interested In</label>
+            <input type="text" id="position" name="position" placeholder="e.g. Software Engineer">
+          </div>
+          <div class="form-group">
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><img src="assets/logo.png" alt="Clann Staffing" style="height: 36px;"></div>
+        <p>Connecting talent with opportunity. Clann Staffing is your trusted partner for workforce solutions across India.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">IT Staffing</a></li>
+          <li><a href="services.html">Contract Hiring</a></li>
+          <li><a href="services.html">Executive Search</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>career@clannstaffing.com</p>
+        <p>+91 9839440774</p>
+        <p>Noida, Uttar Pradesh</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">&copy; 2026 Clann Staffing. All rights reserved.</div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    document.getElementById('applyForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! Your application has been received. Our team will contact you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

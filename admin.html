@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clann Staffing | Admin Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Clann Staffing">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="industries.html">Industries</a>
+    <a href="careers.html">Careers</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin.html">Admin</a>
+  </div>
+
+  <section class="section" style="padding-top: calc(var(--nav-height) + 40px);">
+    <div class="container">
+      <h2 class="section-title">Admin Panel</h2>
+      <p class="section-subtitle">Manage job postings and view quick stats.</p>
+
+      <!-- Stats -->
+      <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 48px;">
+        <div class="stat-item" style="background: white; border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px;">
+          <div class="stat-number" id="statTotal">0</div>
+          <div class="stat-label">Total Jobs</div>
+        </div>
+        <div class="stat-item" style="background: white; border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px;">
+          <div class="stat-number" id="statActive">0</div>
+          <div class="stat-label">Active Jobs</div>
+        </div>
+        <div class="stat-item" style="background: white; border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px;">
+          <div class="stat-number">500<span>+</span></div>
+          <div class="stat-label">Total Placements</div>
+        </div>
+      </div>
+
+      <!-- Add Job Form -->
+      <div style="background: var(--gray); padding: 36px; border-radius: var(--radius); margin-bottom: 48px;">
+        <h3 style="margin-bottom: 24px; color: var(--dark);">Add New Job</h3>
+        <form id="jobForm">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="form-group">
+              <label for="jobTitle">Job Title</label>
+              <input type="text" id="jobTitle" placeholder="e.g. Software Engineer" required>
+            </div>
+            <div class="form-group">
+              <label for="jobCompany">Company</label>
+              <input type="text" id="jobCompany" placeholder="Client company name" required>
+            </div>
+            <div class="form-group">
+              <label for="jobLocation">Location</label>
+              <input type="text" id="jobLocation" placeholder="e.g. Noida" required>
+            </div>
+            <div class="form-group">
+              <label for="jobType">Job Type</label>
+              <select id="jobType">
+                <option value="Full-time">Full-time</option>
+                <option value="Contract">Contract</option>
+                <option value="Part-time">Part-time</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top: 12px;">Add Job</button>
+        </form>
+      </div>
+
+      <!-- Jobs Table -->
+      <h3 style="margin-bottom: 20px; color: var(--dark);">Posted Jobs</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Job Title</th>
+              <th>Company</th>
+              <th>Location</th>
+              <th>Type</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="jobsTableBody">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><img src="assets/logo.png" alt="Clann Staffing" style="height: 36px;"></div>
+        <p>Connecting talent with opportunity. Clann Staffing is your trusted partner for workforce solutions across India.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">IT Staffing</a></li>
+          <li><a href="services.html">Contract Hiring</a></li>
+          <li><a href="services.html">Executive Search</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>career@clannstaffing.com</p>
+        <p>+91 9839440774</p>
+        <p>Noida, Uttar Pradesh</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">&copy; 2026 Clann Staffing. All rights reserved.</div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
